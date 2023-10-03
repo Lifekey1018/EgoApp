@@ -1,0 +1,11 @@
+sentence,start,end
+Add 50 μl 2-propanol,22.0,49.0
+Hit eppen to mix,71.0,84.0
+Centrifuge for 15 minute,105.0,121.0
+Remove liquid,126.0,142.0
+Add 100 μl 70% EtOH,154.0,185.0
+Hit eppen to mix,203.0,211.0
+Centrifuge for 1 minute,229.0,247.0
+Remove liquid,252.0,268.0
+Centrifuge for 1 minute,292.0,323.0
+Resuspend the DNA in 30 μl DW,345.0,373.0
