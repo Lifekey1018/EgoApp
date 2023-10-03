@@ -1,0 +1,19 @@
+sentence,start,end
+Add 200 μl of Resuspension Solution,23.0,50.0
+Add 200 μl of Lysis Solution,63.0,80.0
+Invert 4 times to mix,88.0,91.0
+Add 300 μl of Neutralization Solution,100.0,117.0
+Invert 4 times to mix,127.0,130.0
+Centrifuge at top speed for 5 minutes at room temperature,137.0,145.0
+Decant cleared lysate into Spin Column,150.0,169.0
+Centrifuge at top speed for 30 seconds at room temperature,181.0,191.0
+Discard flowthrough,192.0,196.0
+Reinsert Spin Column into Collection Tube,196.0,198.0
+Add 500 μl of Washing Solution,210.0,228.0
+Centrifuge at top speed for 30 seconds at room temperature,241.0,246.0
+Discard flowthrough,249.0,251.0
+Reinsert Spin Column into Collection Tube,251.0,252.0
+Centrifuge at top speed for 30 seconds at room temperature,253.0,261.0
+Transfer Spin Column to a sterile 15 ml microcentrifuge tube,272.0,274.0
+Add 50 μl of Elution Solution,286.0,305.0
+Centrifuge at top speed for 30 seconds at room temperature,323.0,333.0
