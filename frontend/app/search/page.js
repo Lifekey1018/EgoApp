@@ -5,8 +5,10 @@ import { useRef, useState, useEffect, useLayoutEffect } from 'react'
 export default function Search() {
     // プロトコルの読み込み
     const [protocol, setProtocol] = useState(
-        [['','',''],['','',''],['','',''],['','',''],
-        ['','',''],['','',''],['','',''],['','',''],['','',''],['','','']]);
+        [['','','',''],['','','',''],['','','',''],
+        ['','','',''],['','','',''],['','','',''],
+        ['','','',''],['','','',''],['','','',''],
+        ['','','','']]);
 
     useLayoutEffect(() => {
         fetch('http://127.0.0.1:3000/')
@@ -115,39 +117,39 @@ export default function Search() {
         videoRef.current.play()
     }
     const handleEvent01 = () => {
-        videoRef.current.currentTime = protocol[1][1];
+        videoRef.current.currentTime = protocol[1][2];
         videoRef.current.play()
     };
     const handleEvent02 = () => {
-        videoRef.current.currentTime = protocol[2][1];
+        videoRef.current.currentTime = protocol[2][2];
         videoRef.current.play()
     };
     const handleEvent03 = () => {
-        videoRef.current.currentTime = protocol[3][1];
+        videoRef.current.currentTime = protocol[3][2];
         videoRef.current.play()
     };
     const handleEvent04 = () => {
-        videoRef.current.currentTime = protocol[4][1];
+        videoRef.current.currentTime = protocol[4][2];
         videoRef.current.play()
     };
     const handleEvent05 = () => {
-        videoRef.current.currentTime = protocol[5][1];
+        videoRef.current.currentTime = protocol[5][2];
         videoRef.current.play()
     };
     const handleEvent06 = () => {
-        videoRef.current.currentTime = protocol[6][1];
+        videoRef.current.currentTime = protocol[6][2];
         videoRef.current.play()
     };
     const handleEvent07 = () => {
-        videoRef.current.currentTime = protocol[7][1];
+        videoRef.current.currentTime = protocol[7][2];
         videoRef.current.play()
     };
     const handleEvent08 = () => {
-        videoRef.current.currentTime = protocol[8][1];
+        videoRef.current.currentTime = protocol[8][2];
         videoRef.current.play()
     };
     const handleEvent09 = () => {
-        videoRef.current.currentTime = protocol[9][1];
+        videoRef.current.currentTime = protocol[9][2];
         videoRef.current.play()
     };
     return (
@@ -160,7 +162,7 @@ export default function Search() {
     <Link href="/">
         動画選択画面
     </Link>
-    <video id='video' ref={videoRef} src='videos/ethanol_precipitation_1.mp4' controls autoPlay={true} muted />
+    <video id='video' ref={videoRef} src='videos/S1720001.MP4' controls autoPlay={true} muted />
     
     <div id="time">
     	<span id="currentTime">currentTime</span> / <span id="totalTime">totalTime</span>
@@ -187,7 +189,6 @@ export default function Search() {
         <ul>
             <li>event01
                 <button onClick={handleEvent01}>{protocol[1][0]}</button>
-                {protocol[1][1]}
             </li>
             <li>event02
                 <button onClick={handleEvent02}>{protocol[2][0]}</button>

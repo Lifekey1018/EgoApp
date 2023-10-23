@@ -1,0 +1,47 @@
+[
+    {
+        "sentence":"Add a mixture of adult dorsal fin. extraction buffer and proteinase K",
+        "start":32.0,
+        "end":93.0
+    },
+    {
+        "sentence":"Add 50 µl 2-propanol",
+        "start":100.0,
+        "end":124.0
+    },
+    {
+        "sentence":"Centrifuge for 15 minute",
+        "start":162.0,
+        "end":172.0
+    },
+    {
+        "sentence":"Remove liquid",
+        "start":180.0,
+        "end":194.0
+    },
+    {
+        "sentence":"Add 100 µl 70% ethanol",
+        "start":201.0,
+        "end":232.0
+    },
+    {
+        "sentence":"Centrifuge for 10 minute",
+        "start":262.0,
+        "end":274.0
+    },
+    {
+        "sentence":"Remove liquid",
+        "start":280.0,
+        "end":291.0
+    },
+    {
+        "sentence":"Centrifuge for 2 minute",
+        "start":312.0,
+        "end":334.0
+    },
+    {
+        "sentence":"Resuspend the DNA in 30 µl DW",
+        "start":340.0,
+        "end":386.0
+    }
+]

@@ -8,13 +8,13 @@ app = Flask(__name__,static_folder='.',static_url_path='')
 CORS(app)
 # protocolの読み込み
 protocols=[]
-with open('fixed_protocols/ethanol/ethanol_precipitation_1.csv') as f:
+with open('fixed_protocols/ion/S1720001.csv') as f:
     reader = csv.reader(f)
     for row in reader:
         protocols.append(row)
 
 # spacyの宣言
-nlp = spacy.load('en_core_web_lg')
+nlp = spacy.load('ja_ginza')
 model = whisper.load_model("base")
 start_time = 0
 
@@ -40,7 +40,7 @@ def search():
         if similarity < doc.similarity(search):
             similarity = doc.similarity(search)
             tmp=i
-    start_time = protocols[tmp][1]
+    start_time = protocols[tmp][2]
     print(start_time)    
     return jsonify({'time' : start_time})
 
