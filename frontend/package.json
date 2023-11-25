@@ -9,9 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ricky0123/vad-react": "^0.0.17",
+    "@ricky0123/vad-web": "^0.0.12",
     "lamejs": "^1.2.1",
     "mic-recorder-to-mp3": "^2.2.2",
-    "next": "13.4.16",
+    "next": "^13.5.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-select": "^5.7.7"
@@ -19,6 +21,7 @@
   "devDependencies": {
     "@types/node": "20.5.9",
     "@types/react": "18.2.21",
+    "copy-webpack-plugin": "^11.0.0",
     "typescript": "5.2.2"
   }
 }

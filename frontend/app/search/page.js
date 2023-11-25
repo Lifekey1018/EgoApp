@@ -1,6 +1,11 @@
 'use client'
 import Link from 'next/link'
+import dynamic from 'next/dynamic'
 import { useRef, useState, useEffect, useLayoutEffect } from 'react'
+
+const Vad = dynamic(() => import("./Vad"), {
+    ssr: false,
+})
 
 export default function Search() {
     // プロトコルの読み込み
@@ -16,6 +21,7 @@ export default function Search() {
         .then((data) => setProtocol(data));
     },[]);
 
+    const videoRef = useRef();
     // 検索ボックスに入力された文字列をFlaskとやり取り
     const [form, setForm] = useState({search: ''});
     const [searchTime, setSearchTime] = useState(0)
@@ -29,7 +35,7 @@ export default function Search() {
         e.preventDefault();
     
         try {    
-            const response = await fetch('http://127.0.0.1:3000/search', {
+            const response = await fetch('http://127.0.0.1:3000/search/text', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -99,7 +105,15 @@ export default function Search() {
                         method: 'POST',
                         body: formData,
                     })
-                    const response_data = await response.json()
+
+                    if (response.ok) {
+                        const data = await response.json();
+                        setSearchTime(data.time);
+                        videoRef.current.currentTime = data.time;
+                        videoRef.current.play();
+                    } else {
+                        console.log('errored')
+                    }
                 }
             } catch (error) {
                 alert(error)
@@ -110,12 +124,23 @@ export default function Search() {
 
         fn()
     }, [audioFile])
-    const videoRef = useRef();
-
-    function handleEvent(event_num) {
-        videoRef.current.currentTime = protocol[event_num][1];
+    
+        
+    useEffect(() => {
+        var currentTime = document.getElementById("currentTime");
+        var totalTime = document.getElementById("totalTime");
+        videoRef.current.addEventListener("timeupdate", function() {
+            currentTime.textContent = videoRef.current.currentTime;
+            totalTime.textContent = videoRef.current.duration;
+        }, false);
+    }, [videoRef.current]);
+    /*
+    const handleEvent = (event_num) => {
+        const video = document.getElementById('video');
+        video.current.currentTime = protocol[event_num][1];
         videoRef.current.play()
-    }
+    };
+    */
     const handleEvent01 = () => {
         videoRef.current.currentTime = protocol[1][2];
         videoRef.current.play()
@@ -165,12 +190,11 @@ export default function Search() {
     <video id='video' ref={videoRef} src='videos/S1720001.MP4' controls autoPlay={true} muted />
     
     <div id="time">
-    	<span id="currentTime">currentTime</span> / <span id="totalTime">totalTime</span>
+    	<span id="currentTime">0</span> / <span id="totalTime">0</span>
     </div>
     <div>
         <form onSubmit={handleSubmit}>
             <label htmlFor="search">Search Event</label>
-            <p/>
             <input 
                 type="text"
                 id='search'
@@ -181,6 +205,7 @@ export default function Search() {
             <button>検索</button>
         </form>
     </div>
+    <Vad />
     <div id="audio">
         <button onClick={startRecording}>録音開始</button>
         <button onClick={stopRecording}>録音停止</button>
