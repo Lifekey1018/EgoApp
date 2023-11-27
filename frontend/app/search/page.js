@@ -3,9 +3,21 @@ import Link from 'next/link'
 import dynamic from 'next/dynamic'
 import { useRef, useState, useEffect, useLayoutEffect } from 'react'
 
-const Vad = dynamic(() => import("./Vad"), {
+// import { useListenAudio } from '../../hooks/useListenAudio'
+
+const useListenAudio = dynamic(() => import('../../hooks/useListenAudio'), {
     ssr: false,
 })
+
+const VadVideoPlayer = dynamic(() => import("./VadVideoPlayer"), {
+    ssr: false
+})
+
+
+// const Vad = dynamic(() => import("./vad"), {
+//     ssr: false,
+// })
+
 
 export default function Search() {
     // プロトコルの読み込み
@@ -21,7 +33,7 @@ export default function Search() {
         .then((data) => setProtocol(data));
     },[]);
 
-    const videoRef = useRef();
+    const videoRef = useRef(null);
     // 検索ボックスに入力された文字列をFlaskとやり取り
     const [form, setForm] = useState({search: ''});
     const [searchTime, setSearchTime] = useState(0)
@@ -93,14 +105,13 @@ export default function Search() {
             })
         setRecording(false)
     }
-
+    
     useEffect(() => {
         const fn = async () => {
             try{
                 if (audioFile) {
                     const formData = new FormData()
                     formData.append('file', audioFile)
-
                     const response = await fetch('http://127.0.0.1:3000/audio', {
                         method: 'POST',
                         body: formData,
@@ -108,7 +119,6 @@ export default function Search() {
 
                     if (response.ok) {
                         const data = await response.json();
-                        setSearchTime(data.time);
                         videoRef.current.currentTime = data.time;
                         videoRef.current.play();
                     } else {
@@ -125,15 +135,50 @@ export default function Search() {
         fn()
     }, [audioFile])
     
-        
-    useEffect(() => {
-        var currentTime = document.getElementById("currentTime");
-        var totalTime = document.getElementById("totalTime");
-        videoRef.current.addEventListener("timeupdate", function() {
-            currentTime.textContent = videoRef.current.currentTime;
-            totalTime.textContent = videoRef.current.duration;
-        }, false);
-    }, [videoRef.current]);
+    // const vals = useListenAudio();
+    // const [importedAudioFile,setImportedAudioFile] = useState(vals[1]);
+    
+    // useEffect(() => {
+    //     console.log("useEffect using imported audioFile")
+    //     const fn = async () => {
+    //         try{
+    //             console.log(importedAudioFile)
+    //             if (importedAudioFile) {
+    //                 console.log('importedAudioFile is not null')
+    //                 const formData = new FormData()
+    //                 formData.append('file', importedAudioFile)
+    
+    //                 const response = await fetch('http://127.0.0.1:3000/audio', {
+    //                     method: 'POST',
+    //                     body: formData,
+    //                     mode: 'no-cors',
+    //                 })
+    
+    //                 if (response.ok) {
+    //                     const data = await response.json();
+    //                     setSearchTime(data.time);
+    //                     videoRef.current.currentTime = data.time;
+    //                     videoRef.current.play();
+    //                 } else {
+    //                     console.log('errored');
+    //                     console.log(response);
+    //                 }
+    //             }
+    //         } catch (error) {
+    //             alert(error)
+    //         }
+    //     }
+    //     fn()
+    // }, [importedAudioFile])
+
+    // useEffect(() => {
+    //     var currentTime = document.getElementById("currentTime");
+    //     var totalTime = document.getElementById("totalTime");
+    //     videoRef.current.addEventListener("timeupdate", function() {
+    //         currentTime.textContent = videoRef.current.currentTime;
+    //         totalTime.textContent = videoRef.current.duration;
+    //     }, false);
+    // }, [videoRef.current]);
     /*
     const handleEvent = (event_num) => {
         const video = document.getElementById('video');
@@ -187,11 +232,14 @@ export default function Search() {
     <Link href="/">
         動画選択画面
     </Link>
-    <video id='video' ref={videoRef} src='videos/S1720001.MP4' controls autoPlay={true} muted />
+    <div id="vadVideoplayer">
+        <VadVideoPlayer videoRef={videoRef}></VadVideoPlayer>
+    </div>
     
     <div id="time">
     	<span id="currentTime">0</span> / <span id="totalTime">0</span>
     </div>
+    {/* <Vad /> */}
     <div>
         <form onSubmit={handleSubmit}>
             <label htmlFor="search">Search Event</label>
@@ -205,11 +253,11 @@ export default function Search() {
             <button>検索</button>
         </form>
     </div>
-    <Vad />
     <div id="audio">
         <button onClick={startRecording}>録音開始</button>
         <button onClick={stopRecording}>録音停止</button>
     </div>
+    
     <div id="control">
         <ul>
             <li>event01
