@@ -3,12 +3,6 @@ import Link from 'next/link'
 import dynamic from 'next/dynamic'
 import { useRef, useState, useEffect, useLayoutEffect } from 'react'
 
-// import { useListenAudio } from '../../hooks/useListenAudio'
-
-const useListenAudio = dynamic(() => import('../../hooks/useListenAudio'), {
-    ssr: false,
-})
-
 const VadVideoPlayer = dynamic(() => import("./VadVideoPlayer"), {
     ssr: false
 })
