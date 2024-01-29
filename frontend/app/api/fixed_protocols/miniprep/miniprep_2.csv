@@ -1,0 +1,29 @@
+sentence,start,end
+Add 250 μl of Cell Resuspension Solution,19.0,38.0
+Add 250 μl of Cell Lysis Solution,60.0,76.0
+Invert 4 times to mix,79.0,83.0
+Add 10 μl of Alkaline Protease Solution,115.0,132.0
+Invert 4 times to mix,136.0,138.0
+Incubate 5 minutes at room temperature,140.0,147.0
+Add 350 μl of Neutralization Solution,174.0,187.0
+Invert 4 times to mix,191.0,195.0
+Centrifuge at top speed for 10 minutes at room temperature,214.0,224.0
+Insert Spin Column into Collection Tube,225.0,233.0
+Decant cleared lysate into Spin Column,244.0,248.0
+Centrifuge at top speed for 1 minute at room temperature,268.0,277.0
+Discard flowthrough,278.0,281.0
+Reinsert Spin Column into Collection Tube,281.0,282.0
+Add 750 μl of Wash Solution,311.0,321.0
+Centrifuge at top speed for 1 minute,333.0,337.0
+Discard flowthrough,338.0,340.0
+Reinsert Spin Column into Collection Tube,341.0,342.0
+Add 250 μl of Wash Solution,350.0,360.0
+Centrifuge at top speed for 1 minute,370.0,373.0
+Discard flowthrough,374.0,376.0
+Reinsert Spin Column into Collection Tube,377.0,378.0
+Centrifuge at top speed for 2 minutes at room temperature,379.0,385.0
+Discard flowthrough,386.0,388.0
+Transfer Spin Column to a sterile 15 ml microcentrifuge tube,391.0,392.0
+Add 100 μl of Nuclease-Free Water to the Spin Column,406.0,420.0
+Centrifuge at top speed for 1 minute at room temperature,434.0,441.0
+Discard Spin Column,442.0,444.0

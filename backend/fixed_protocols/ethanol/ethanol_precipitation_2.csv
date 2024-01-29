@@ -1,0 +1,10 @@
+sentence,start,end
+Add a mixture of adult dorsal fin, extraction buffer and proteinase K,23.0,77.0
+Add 50 μl 2-propanol,81.0,107.0
+Centrifuge for 15 minute,141.0,165.0
+Remove liquid,170.0,189.0
+Add 100 μl 70% EtOH,199.0,224.0
+Centrifuge for 10 minute,250.0,260.0
+Remove liquid,266.0,287.0
+Centrifuge for 2 minute,305.0,322.0
+Resuspend the DNA in 30 μl DW,332.0,364.0

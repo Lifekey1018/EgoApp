@@ -1,0 +1,10 @@
+sentence_jp,sentence_en,start,end
+ワークシートのイラストに合わせてマイクロプレートを置く,Put a microplate on a grid of a worksheet.,0.85058,6.645978
+ピンセットを袋から取り出す,Take a pair of tweezers out of a bag.,10.450061,21.806679
+マイクロプレートに3枚の銅板をピンセットを用いて並べる,Put three copper plates on the microplate using the pair of tweezers.,22.888834,78.433845
+マイクロプレートに3枚の亜鉛板をピンセットを用いて並べる,Put three zinc plates on the microplate using the pair of tweezers.,80.429471,118.810822
+マイクロプレートに3枚のマグネシウム板をピンセットを用いて並べる,Put three magnesium plates on the microplate using the pair of tweezers.,119.409219,171.903121
+それぞれの金属板に硫酸銅水溶液を1滴ずつ滴下する,Put a drop of copper sulfate aqueous solution on each metal plate.,178.992782,210.054414
+それぞれの金属板に硫酸亜鉛水溶液を1滴ずつ滴下する,Put a drop of zinc sulfate aqueous solution on each metal plate.,211.825219,232.566686
+それぞれの金属板に硫酸マグネシウム水溶液を1滴ずつ滴下する,Put a drop of magnesium sulfate aqueous solution on each metal plate.,233.767026,260.393912
+実験結果をワークシートの表に記入し、反応しやすい順番に金属をワークシートのまとめに記入する,Fill in a table in the worksheet with results and then write down names of metals in the worksheet frorm the most reactive one.,286.364865,330.307812

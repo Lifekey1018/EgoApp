@@ -1,0 +1,74 @@
+[
+{
+    "startTime": 2.273449,
+    "endTime": 22.072877,
+    "instruction": 0,
+    "labels": [],
+    "caption": ""
+},
+{
+    "startTime": 23.596156,
+    "endTime": 30.258074,
+    "instruction": 1,
+    "labels": [],
+    "caption": ""
+},
+{
+    "startTime": 36.399776,
+    "endTime": 56.020768,
+    "instruction": 2,
+    "labels": [],
+    "caption": ""
+},
+{
+    "startTime": 57.89796,
+    "endTime": 59.389126,
+    "instruction": -1,
+    "labels": [
+        1
+    ],
+    "caption": "Graspe connection"
+},
+{
+    "startTime": 60.431565,
+    "endTime": 91.255487,
+    "instruction": 2,
+    "labels": [],
+    "caption": ""
+},
+{
+    "startTime": 92.405455,
+    "endTime": 105.408648,
+    "instruction": 3,
+    "labels": [],
+    "caption": ""
+},
+{
+    "startTime": 106.243124,
+    "endTime": 116.442344,
+    "instruction": 4,
+    "labels": [],
+    "caption": ""
+},
+{
+    "startTime": 119.091883,
+    "endTime": 129.45496,
+    "instruction": 5,
+    "labels": [],
+    "caption": ""
+},
+{
+    "startTime": 130.706678,
+    "endTime": 134.588229,
+    "instruction": 6,
+    "labels": [],
+    "caption": ""
+},
+{
+    "startTime": 135.613869,
+    "endTime": 152.98941,
+    "instruction": 7,
+    "labels": [],
+    "caption": ""
+}
+]

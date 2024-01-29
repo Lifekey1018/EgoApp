@@ -1,0 +1,1 @@
+"use strict";exports.id=451,exports.ids=[451],exports.modules={6451:(e,o,r)=>{r.r(o),r.d(o,{$$typeof:()=>d,Demo:()=>i,__esModule:()=>a,default:()=>m});var t=r(5153);let s=(0,t.createProxy)(String.raw`/Users/kajimurakeiya/EgoApp/frontend/app/demo/Demo.js`),{__esModule:a,$$typeof:d}=s,p=s.default,i=s.Demo,m=p}};

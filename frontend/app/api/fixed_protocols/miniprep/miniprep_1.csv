@@ -1,0 +1,30 @@
+sentence,start,end
+Transfer 1 - 10 ml of culture overnight to eppen,32.0,57.0
+Centrifuge for 5 minutes,71.0,82.0
+Thoroughly resuspend pellet with 250 μl of Cell Resuspension Solution,126.0,148.0
+Add 250 μl of Cell Lysis Solution to each sample,164.0,179.0
+Invert 4 times to mix,183.0,187.0
+Add 10 μl of Alkaline Protease Solution,206.0,222.0
+Invert 4 times to mix,228.0,231.0
+Incubate 5 minutes at room temperature,234.0,240.0
+Add 350 μl of Neutralization Solution,252.0,269.0
+Invert 4 times to mix,278.0,282.0
+Centrifuge at top speed for 10 minutes at room temperature,287.0,298.0
+Insert Spin Column into Collection Tube,299.0,302.0
+Decant cleared lysate into Spin Column,310.0,324.0
+Centrifuge at top speed for 1 minute at room temperature,336.0,342.0
+Discard flowthrough,342.0,344.0
+Reinsert Spin Column into Collection Tube,345.0,346.0
+Add 750 μl of Wash Solution,359.0,373.0
+Centrifuge at top speed for 1 minute,390.0,394.0
+Discard flowthrough,395.0,397.0
+Reinsert Spin Column into Collection Tube,398.0,399.0
+Add 250 μl of Wash Solution,402.0,415.0
+Centrifuge at top speed for 1 minute,430.0,434.0
+Discard flowthrough,435.0,438.0
+Reinsert Spin Column into Collection Tube,438.0,439.0
+Centrifuge at top speed for 2 minutes at room temperature,442.0,449.0
+Transfer Spin Column to a sterile 15 ml microcentrifuge tube,450.0,452.0
+Add 100 μl of Nuclease-Free Water to the Spin Column,467.0,479.0
+Centrifuge at top speed for 1 minute at room temperature,490.0,495.0
+Discard Spin Column,496.0,498.0

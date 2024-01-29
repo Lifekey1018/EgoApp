@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/0087fe1d-9ebd-4adc-8854-2377acdff6d6/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/EgoApp",
+    "appService.deploySubpath": "backend"
+}

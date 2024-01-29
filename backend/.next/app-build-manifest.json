@@ -1,0 +1,52 @@
+{
+  "pages": {
+    "/_not-found": [
+      "static/chunks/webpack-dcf41b68c59c798a.js",
+      "static/chunks/fd9d1056-c9a5670c43437b2c.js",
+      "static/chunks/472-4ecc12876c5b143a.js",
+      "static/chunks/main-app-b51567e1c9741c8c.js",
+      "static/chunks/app/_not-found-31804607be03105a.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-dcf41b68c59c798a.js",
+      "static/chunks/fd9d1056-c9a5670c43437b2c.js",
+      "static/chunks/472-4ecc12876c5b143a.js",
+      "static/chunks/main-app-b51567e1c9741c8c.js",
+      "static/css/74b7522b9edacb6c.css",
+      "static/chunks/app/layout-3fbea7937bf64176.js"
+    ],
+    "/[category]/page": [
+      "static/chunks/webpack-dcf41b68c59c798a.js",
+      "static/chunks/fd9d1056-c9a5670c43437b2c.js",
+      "static/chunks/472-4ecc12876c5b143a.js",
+      "static/chunks/main-app-b51567e1c9741c8c.js",
+      "static/chunks/app/[category]/page-57204e92f9d58c7c.js"
+    ],
+    "/demo/page": [
+      "static/chunks/webpack-dcf41b68c59c798a.js",
+      "static/chunks/fd9d1056-c9a5670c43437b2c.js",
+      "static/chunks/472-4ecc12876c5b143a.js",
+      "static/chunks/main-app-b51567e1c9741c8c.js",
+      "static/chunks/6e5c0b69-e7f3dac694847c98.js",
+      "static/chunks/732-335039200b75bce2.js",
+      "static/chunks/app/demo/page-31a472285966bf4e.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-dcf41b68c59c798a.js",
+      "static/chunks/fd9d1056-c9a5670c43437b2c.js",
+      "static/chunks/472-4ecc12876c5b143a.js",
+      "static/chunks/main-app-b51567e1c9741c8c.js",
+      "static/chunks/176-e7569068de5302f7.js",
+      "static/chunks/app/page-3d5ac41520692fc3.js"
+    ],
+    "/search/page": [
+      "static/chunks/webpack-dcf41b68c59c798a.js",
+      "static/chunks/fd9d1056-c9a5670c43437b2c.js",
+      "static/chunks/472-4ecc12876c5b143a.js",
+      "static/chunks/main-app-b51567e1c9741c8c.js",
+      "static/chunks/a73fccbb-7b78cd81b9188776.js",
+      "static/chunks/176-e7569068de5302f7.js",
+      "static/chunks/app/search/page-206d702cf18660d6.js"
+    ]
+  }
+}
