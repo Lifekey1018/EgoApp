@@ -1,9 +1,6 @@
 meta
 venv
 hooks
-<<<<<<< HEAD
-
-=======
 *.mp4
 *.MP4
->>>>>>> 3b98116 (first commit)
+.DS_Store
