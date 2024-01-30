@@ -11,6 +11,7 @@
   "dependencies": {
     "@ricky0123/vad-react": "^0.0.17",
     "@ricky0123/vad-web": "^0.0.12",
+    "form-data": "^4.0.0",
     "lamejs": "^1.2.1",
     "mic-recorder-to-mp3": "^2.2.2",
     "next": "^13.5.6",

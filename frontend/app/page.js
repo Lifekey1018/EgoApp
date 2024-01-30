@@ -12,11 +12,6 @@ return (
     <Link href="../search">
       ion
     </Link>
-
-    <br/>
-    <Link href="../demo">
-      VAD Demo
-    </Link>
-    </div>
-);
+  </div>
+)
 }

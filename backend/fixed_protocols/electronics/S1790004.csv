@@ -1,0 +1,9 @@
+sentence_jp,sentence_en,start,end
+電池ボックスとスイッチS1を直列に繋ぐ,Connect the battery box and switch S1 in series.,2.273449,22.072877
+スイッチS1とモーターを直列に繋ぐ,Connect the switch S1 and motor in series.,23.596156,30.258074
+スイッチS2とランプL1を並列に繋ぐ,Connect switch S2 and lamp L1 in parallel.,36.399776,91.255487
+スイッチS2をモーターと電池ボックスと直列に繋ぐ,Connect the switch S2 in series with the motor and the battery box.,92.405455,105.408648
+プロペラをモーターに載せる,Put a propeller on the motor.,106.243124,116.442344
+電池を電池ボックスに入れる,Put two battery in the battery box.,119.091883,129.45496
+スイッチS1をONにする,Turn on the switch S1.,130.706678,134.588229
+スイッチS2をONにする,Turn on the switch S2.,135.613869,152.98941
