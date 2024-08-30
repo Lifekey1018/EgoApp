@@ -33,3 +33,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# video
+*.mp4
+*.MP4
+
+# audio
+*.mp3

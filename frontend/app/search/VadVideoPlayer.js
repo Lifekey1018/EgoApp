@@ -27,7 +27,7 @@ export const VadVideoPlayer = ({videoRef}) => {
               if (audioFile) {
                   const formData = new FormData()
                   formData.append('file', audioFile)
-                  const response = await fetch('http://127.0.0.1:3000/audio', {
+                  const response = await fetch(process.env.API_URL+'/audio', {
                       method: 'POST',
                       body: formData,
                   })
@@ -58,7 +58,7 @@ export const VadVideoPlayer = ({videoRef}) => {
 
   return (
     <div>
-      <video id='video' ref={videoRef} src='videos/S1720001.MP4' controls autoPlay={true} muted />
+      <video id='video' ref={videoRef} src='videos/ion.MP4' controls autoPlay={true} muted />
       {isLoading ? <div>処理待ち中</div> : <div>喋っていいよ</div>}
     </div>
   )

@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mui/material": "^5.15.15",
+    "@mui/styled-engine-sc": "^6.0.0-alpha.18",
     "@ricky0123/vad-react": "^0.0.17",
     "@ricky0123/vad-web": "^0.0.12",
     "form-data": "^4.0.0",
@@ -17,7 +19,8 @@
     "next": "^13.5.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-select": "^5.7.7"
+    "react-select": "^5.7.7",
+    "styled-components": "^6.1.8"
   },
   "devDependencies": {
     "@types/node": "20.5.9",

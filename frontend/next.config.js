@@ -2,17 +2,9 @@ const CopyPlugin = require("copy-webpack-plugin")
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  rewrites: async () => {
-    return [
-      {
-        source: '/api/:path*',
-        destination:
-          process.env.NODE_ENV === 'development'
-            ? 'http://127.0.0.1:3000/api/:path*'
-            : '/api/',
-      },
-    ]
+  reactStrictMode: false,
+  env: {
+    API_URL: process.env.API_URL
   },
   webpack: (config, {}) => {
     config.resolve.extensions.push(".js",".jsx",".ts", ".tsx")

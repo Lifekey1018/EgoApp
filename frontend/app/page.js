@@ -1,16 +1,19 @@
 'use client'
 import Link from 'next/link'
-import React,{ useState, useLayoutEffect } from 'react';
-import Select from 'react-select';
-
+import React from 'react';
+import Header from './components/Header';
 export default function Home() {
- 
+
 return (
   <div>
+    <Header />
     <div>実験動画一覧</div>
-    <br/>
-    <Link href="../search">
-      ion
+    <Link href="../ion">
+      イオン実験
+    </Link>
+    <br />
+    <Link href="../cardboard">
+      ダンボール工作 
     </Link>
   </div>
 )

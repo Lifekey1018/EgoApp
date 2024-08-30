@@ -1,8 +1,9 @@
-video {
-  width: 80%;
-  max-width: 1000px;
-  height: 300px;
-  aspect-ratio: 16 / 9; /* 動画のアスペクト比 */
-  display: block;
-  margin: auto;
+header {
+  background-color: black;
+}
+text-white {
+  color: white;
+}
+.text-white {
+  color: white;
 }

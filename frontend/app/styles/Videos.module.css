@@ -1,0 +1,6 @@
+.video {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* 動画のアスペクト比 */
+    display: block;
+    margin: auto;
+  }

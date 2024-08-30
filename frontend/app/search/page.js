@@ -12,7 +12,7 @@ export default function Search() {
     // プロトコルの読み込み
     const [protocols, setProtocols] = useState([]);
     useLayoutEffect(() => {
-        fetch("/api/index")
+        fetch(process.env.API_URL+"/index")
         .then((res) => res.json())
         .then((data) => setProtocols(data));
     },[]);
@@ -30,7 +30,7 @@ export default function Search() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {    
-            const response = await fetch('/api/text', {
+            const response = await fetch(process.env.API_URL+'/text', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -95,7 +95,7 @@ export default function Search() {
                 if (audioFile) {
                     const formData = new FormData()
                     formData.append('file', audioFile)
-                    const response = await fetch('/api/audio', {
+                    const response = await fetch(process.env.API_URL+'/audio', {
                         method: 'POST',
                         body: formData,
                     })
